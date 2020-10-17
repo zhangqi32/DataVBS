@@ -2,7 +2,7 @@ Set unNamedArguments = WScript.Arguments.UnNamed
 set WshShell = WScript.CreateObject("WScript.Shell") 
 Set objFSO = CreateObject("Scripting.FileSystemObject") 
 ' 修为自己的目标文件夹
-strFolder = "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup\"
+strFolder = "C:\Users\hwzhao\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\"
 for count = 0 to wscript.arguments.count-1 Step 1 
     filename = unNamedArguments.Item(count) 
     Set objFile = objFSO.GetFile(filename) 
